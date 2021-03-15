@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guess.GuessActivity">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/welcome_to"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGuessWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/number_guessing_game"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewWelcome"
+        app:layout_constraintStart_toStartOf="@+id/textViewWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+
+    <TextView
+        android:id="@+id/textViewGuessNumberBetween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/guess_number_between_1_to_100"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewGuessWelcome"
+        app:layout_constraintStart_toStartOf="@+id/textViewGuessWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuessWelcome" />
+
+    <EditText
+        android:id="@+id/editTextTextEnterGuessNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/enter_your_number"
+        android:inputType="number|textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewGuessNumberBetween"
+        app:layout_constraintStart_toStartOf="@+id/textViewGuessNumberBetween"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuessNumberBetween"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/buttonGuessNumberSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="guessFunction"
+        android:text="@string/submit"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEnterGuessNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEnterGuessNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEnterGuessNumber" />
+
+    <TextView
+        android:id="@+id/textViewByTechilyFly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/by_techilyfly_com"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TimePass</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="submit">Submit</string>
+    <string name="number_guessing_game">Number Guessing Game</string>
+    <string name="enter_your_number">Enter Your Number</string>
+    <string name="guess_number_between_1_to_100">Guess Number Between 1 to 100</string>
+    <string name="by_techilyfly_com">By: TechilyFly.com</string>
+</resources>
